@@ -1,0 +1,19 @@
+[project]
+name = "Verbose"
+version = "0.1.0"
+description = "Retrieve the pronunciation and audio file for a given word."
+authors = [
+   {name = "Ian Trudel", email = "ian.trudel@gmail.com"},
+]
+dependencies = [
+   "requests",
+   "playsound==1.2.2",
+   "PyGObject",
+   "termcolor"
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+
+[tool.pdm.scripts]
+start = "python -m src.main"
